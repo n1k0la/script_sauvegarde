@@ -1,4 +1,5 @@
-tar -czvf documents_sauvegarde_2020w30.tar .mozilla Desktop Documents Public 
+#!/bin/bash
 
-tar -czvf media_sauvegarde_2020w30.tar Entertaiments
+tar -zcvf "$(date '+%Y-%w')_sauvegarde-documents.tar.gz" .mozilla Desktop Documents Public
 
+tar -zcvf "$(date '+%Y-%w')_sauvegarde-divertissement.tar.gz" Entertaiments Downloads
